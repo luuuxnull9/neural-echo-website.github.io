@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯 - Neural Echo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="dark-theme news-page">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Neural Echo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品系列</a></li>
+                <li><a href="technology.html">技术支持</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="news.html" class="active">新闻资讯</a></li>
+                <li><a href="#" class="lang-switch">CN/EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section id="hero" class="hero hero-news">
+        <div class="container">
+            <div class="hero-header">
+                <div class="hero-left">
+                    <h1 class="hero-title en">NEWS</h1>
+                    <p class="hero-subtitle">新闻资讯</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero区域下方添加新闻列表部分 -->
+    <section class="news-list">
+        <div class="container">
+            <div class="news-filters">
+                <div class="filter-tags">
+                    <button class="tag-btn active" data-category="all">全部</button>
+                    <button class="tag-btn" data-category="latest">最新资讯</button>
+                    <button class="tag-btn" data-category="paper">学术论文</button>
+                </div>
+            </div>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-image news-1"></div>
+                    <div class="news-content">
+                        <h3><a href="news-detail.html" class="news-title-link">攻壳智动多模态脑机接口神经信号采集器项目荣获2024HICOOL全球创业大赛优奖</a></h3>
+                        <p>由攻壳智动主导的创新项目《基于多模态脑机接口的智能义肢产业化项目》于2023年12月荣获"星微院杯"创新创业大赛三等奖。</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">最新资讯</span>
+                            </div>
+                            <a href="news-detail.html" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-image news-2"></div>
+                    <div class="news-content">
+                        <h3>研究成果���经工程学期刊《Frontiers in Computational Neuroscience》出版</h3>
+                        <p>Recognition of motor intentions from EEGs of the same upper limb by signal traceability and Riemannian geometry features.</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">学术论文</span>
+                            </div>
+                            <a href="#" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-image news-1"></div>
+                    <div class="news-content">
+                        <h3>攻壳智动多模态脑机接口神经信号采集器项目荣获2024HICOOL全球创业大赛优奖</h3>
+                        <p>由攻壳智动主导的创新项目《基于多模态脑机接口的智能义肢产业化项目》于2023年12月荣获"星微院杯"创新创业大赛三等奖。</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">最新资讯</span>
+                            </div>
+                            <a href="#" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-image news-3"></div>
+                    <div class="news-content">
+                        <h3>攻壳智动多模态脑机接口神经信号采集器项目荣获2024HICOOL全球创业大赛优奖</h3>
+                        <p>由攻壳智动主导的创新项目《基于多模态脑机接口的智能义肢产业化项目》于2023年12月荣获"星微院杯"创新创业大赛三等奖。</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">最新资讯</span>
+                            </div>
+                            <a href="#" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-image news-4"></div>
+                    <div class="news-content">
+                        <h3>研究���果在神经工程学期刊《Frontiers in Computational Neuroscience》出版</h3>
+                        <p>Recognition of motor intentions from EEGs of the same upper limb by signal traceability and Riemannian geometry features.</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">学术论文</span>
+                            </div>
+                            <a href="#" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-image news-5"></div>
+                    <div class="news-content">
+                        <h3>攻壳智动多模态脑机接口神经信号采集器项目荣获2024HICOOL全球创业大赛优奖</h3>
+                        <p>由攻壳智动主导的创新项目《基于多模态脑机接口的智能义肢产业化项目》于2023年12月荣获"星微院杯"创新创业大赛三等奖。</p>
+                        <div class="news-meta">
+                            <div class="meta-left">
+                                <span class="date">2023-02-14</span>
+                                <span class="tag">最新资讯</span>
+                            </div>
+                            <a href="#" class="view-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Neural Echo">
+                </div>
+                <a href="about.html#contact" class="view-more">联系我们</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>地址：北京市海淀区上地信息路26号01层0112室</p>
+                    <p>邮箱：neuralechotec@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><img src="images/social-youtube.svg" alt="YouTube"></a>
+                    <a href="#" class="social-link"><img src="images/social-wechat.svg" alt="WeChat"></a>
+                    <a href="#" class="social-link"><img src="images/social-bilibili.svg" alt="Bilibili"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright 2022-2024 攻壳智动 Co. All Right Reserved 备案号：京ICP备 2023007491号-1 / 京ICP备2023007491号-2</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html> 
